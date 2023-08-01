@@ -1,0 +1,32 @@
+footer {
+	position: relative; padding: 5%;
+	background-color: $gray-dark;
+
+	p {
+		margin-bottom: 0.6em;
+        color: white;
+    }
+    > p {
+        font-family: 'Shrikhand', cursive;
+        margin-bottom: 1em;
+    }
+	i {
+		width:1.6em;
+	}
+	a :hover {
+			color: $tertiary-color;
+		}
+	
+}
+
+
+@media screen and (min-width: $mobile-breakpoint ) {
+    footer{
+        width: 70%;
+        position: relative;
+         left: 10%;
+    }
+  
+}
+
+

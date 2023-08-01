@@ -12,6 +12,12 @@ main {
   z-index: 9;
   padding-top: 62px;
   box-sizing: border-box;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 #light-label {
@@ -134,6 +140,73 @@ header:hover {
   color: #9356DC;
 }
 
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant .card {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px lightgray;
+  background-color: white;
+  min-height: 200px;
+  width: 95%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+}
+.restaurant .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 180px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 0;
+}
+.restaurant .card .card-text {
+  padding-bottom: 15px;
+  margin: 4%;
+  position: relative;
+}
+.restaurant .card .card-text h3,
+.restaurant .card .card-text label {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.restaurant .card .card-text p {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 2em;
+  height: 100%;
+  overflow: hidden;
+}
+.restaurant .card .card-text p span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.restaurant .card .card-text p span i {
+  width: 100%;
+  font-size: 1.8em;
+  background: linear-gradient(rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant .card .card-text p span:nth-child(1) {
+  max-width: 0;
+  transition: all 0.4s;
+}
+.restaurant .card .card-text p:hover > span:nth-child(1) {
+  max-width: 100px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .presentation {
     width: 50%;
@@ -150,9 +223,28 @@ header:hover {
   }
   .usage {
     width: 50%;
+    height: inherit;
   }
   .usage article {
     margin-bottom: 40px;
+  }
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .restaurant h2 {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+  .restaurant .card {
+    width: 42%;
+    transition: 0.3s;
+  }
+  .restaurant .card:hover {
+    transform: scale(1.02);
   }
 }
 button {
@@ -170,4 +262,32 @@ button {
 button:hover {
   box-shadow: 0 4px 5px lightgray;
   filter: brightness(1.1);
+}
+
+footer {
+  position: relative;
+  padding: 5%;
+  background-color: #353535;
+}
+footer p {
+  margin-bottom: 0.6em;
+  color: white;
+}
+footer > p {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 1em;
+}
+footer i {
+  width: 1.6em;
+}
+footer a :hover {
+  color: #99E2D0;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    width: 70%;
+    position: relative;
+    left: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */
