@@ -1,0 +1,17 @@
+button {
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px lightgray;
+  padding: 0 10%;
+  border: none;
+  font-weight: weight(bold);
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(180deg, $secondary-color 0%, $primary-color 100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  &:hover {
+    box-shadow: 0 4px 5px lightgray;
+    filter: brightness(1.1);
+  }
+}

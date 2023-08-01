@@ -1,0 +1,38 @@
+
+
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%; 
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    z-index: 10;
+
+    img {
+        object-fit: contain;
+        max-width: 150px; // Reduce the max-width for mobile devices
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: -15px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: $mobile-breakpoint ) {
+    
+    header{
+        padding: 1.5%;
+      
+    }
+}
