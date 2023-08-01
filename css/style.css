@@ -10,22 +10,44 @@ body {
 main {
   position: relative;
   z-index: 9;
-  margin-top: 64px;
+  padding-top: 62px;
+  box-sizing: border-box;
 }
 
 #light-label {
   font-weight: 300;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    position: relative;
+    width: 80%;
+    top: 0;
+    left: 10%;
+  }
+  main .home {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  body {
+    background-color: #282828;
+  }
+}
 header {
   width: 100%;
+  height: 5px;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 30px;
   box-shadow: 0 0 10px grey;
   background-color: white;
   z-index: 10;
@@ -43,36 +65,94 @@ header:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  header {
-    padding: 1.5%;
-  }
-}
 .location {
   background-color: #eaeaea;
-  height: 40px;
+  height: 45px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1%;
-  font-size: smaller;
 }
 
 .presentation {
   padding: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   align-items: center;
+  background-color: #f6f6f6;
+}
+.presentation p {
+  margin: 50px 0;
 }
 .presentation button {
   margin-top: 20px;
 }
 
+.usage {
+  padding: 20px;
+  background-color: white;
+}
+.usage article {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 0 0 15px;
+  margin: 5% 0;
+  width: 100%;
+  height: 80px;
+  cursor: pointer;
+}
+.usage article h3 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 5% 0 30px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0 5px 10px lightgray;
+  transition: all 0.4s;
+}
+.usage article h3 i {
+  margin-right: 0.5em;
+  transition: all 0.4s;
+}
+.usage article p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+}
+.usage article:hover h3 {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.usage article:hover i {
+  color: #9356DC;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .presentation {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 768px) {
   .location {
-    height: 30px;
+    height: 50px;
+  }
+  .home-flex {
+    display: flex;
+    background-color: white;
+    height: 90vh;
+  }
+  .usage {
+    width: 50%;
+  }
+  .usage article {
+    margin-bottom: 40px;
   }
 }
 button {

@@ -3,21 +3,28 @@
 
 .location{
      background-color: $gray-light;
-    height: 40px;
+    height: 45px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1%; 
-    font-size: smaller; 
+    padding: 1%;
+    
+    // font-size: smaller; 
 }
 
 .presentation{
     padding: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // padding 50px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     text-align: center;
     align-items: center;
+    background-color: $gray-clear;
+
+    p{
+        margin: 50px 0; 
+    }
 
     button{
         margin-top: 20px;
@@ -25,14 +32,97 @@
     }
 }
 
+.usage{
+    padding: 20px;
+//    align-items: unset;
+    background-color: white;
+    article {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 0 0 15px;
+        margin: 5% 0;
+        width: 100%;
+        height: 80px;
+        cursor: pointer;
+        h3 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 5% 0 30px;
+            border-radius: 20px;
+            background-color: $gray-clear;
+            box-shadow: 0 5px 10px lightgray;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            i {
+                margin-right: 0.5em;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+        }
+        p {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+            left: 0;
+            width:30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            color: white;
+        }
+        &:hover {
+            h3 {
+                background-color: $primary-background;
+            }
+            i {
+                color: $primary-color; 
+            }
+        }
+
+}
+
+}
 
 
 
+
+@media screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint){
+
+
+.presentation{
+
+    width: 50%;
+}
+
+
+ 
+}
 
 
 @media screen and (min-width: $mobile-breakpoint ) {
     
    .location{
-    height: 30px;
+    height: 50px;
    }
+
+  
+     .home-flex{
+    display: flex; 
+    background-color: white;
+    height: 90vh;
+   }
+
+
+   .usage {
+    width: 50%;
+    article{
+        margin-bottom: 40px;
+    }
+   }
+   
+
+   
 }

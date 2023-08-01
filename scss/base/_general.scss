@@ -12,12 +12,54 @@ body {
 
 }
 
-main{
-    position: relative; 
+main {
+    position: relative;
     z-index: 9;
-    margin-top: 64px;
+    padding-top: 62px;
+    box-sizing: border-box;
 }
 
-#light-label{
-  font-weight: weight(light);
+#light-label {
+    font-weight: weight(light);
 }
+
+@media screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint){
+
+
+
+}
+
+
+@media screen and (min-width: $mobile-breakpoint ) {
+
+    main {
+       
+        position: relative;
+
+        width: 80%;
+        top: 0;
+        left: 10%;
+
+        .home {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+
+    }
+
+    section {
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    
+    body {
+        background-color: #282828;
+        
+    }
+}
+
+
