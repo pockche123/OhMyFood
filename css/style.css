@@ -233,6 +233,10 @@ header:hover {
   }
 }
 @media screen and (min-width: 768px) {
+  .home-footer {
+    width: 70%;
+    left: 10%;
+  }
   .location {
     height: 50px;
   }
