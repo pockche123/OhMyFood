@@ -20,8 +20,14 @@ a {
   color: black;
 }
 
-#light-label {
+.light-label {
   font-weight: 300;
+}
+
+li {
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -31,17 +37,30 @@ a {
     top: 0;
     left: 10%;
   }
-  main .home {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-  }
   section {
     box-sizing: border-box;
     margin: 0 auto;
   }
   body {
     background-color: #282828;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 header {
@@ -75,7 +94,7 @@ header:hover {
   background-color: #eaeaea;
   height: 45px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 1%;
 }
@@ -172,7 +191,7 @@ header:hover {
   position: relative;
 }
 .restaurant .card .card-text h3,
-.restaurant .card .card-text label {
+.restaurant .card .card-text span {
   margin: 0;
   margin-bottom: 3px;
 }
@@ -248,10 +267,11 @@ header:hover {
   }
 }
 button {
+  display: inline-block;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0 5px 10px lightgray;
-  padding: 0 10%;
+  padding: 0 4em;
   border: none;
   font-weight: 700;
   color: white;
@@ -264,6 +284,144 @@ button:hover {
   filter: brightness(1.1);
 }
 
+.full-palette::before {
+  background-image: url("../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.enchanted::before {
+  background-image: url("../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.menu {
+  padding: 270px 0 0 0;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+.menu h1 {
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Shrikhand", cursive;
+  padding-right: 1.5em;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu h1 span {
+  position: absolute;
+  right: 0;
+}
+.menu section {
+  background-color: white;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 2% 5%;
+}
+.menu article {
+  margin-top: 2em;
+}
+.menu article > h3 {
+  position: relative;
+  font-weight: normal;
+  padding-bottom: 10px;
+  margin-top: 1em;
+}
+.menu article > h3::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  bottom: 0;
+}
+.menu .dish {
+  box-sizing: border-box;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 10px #C0C0C0;
+  align-items: center;
+  display: flex;
+  padding-left: 1.5em;
+  cursor: pointer;
+}
+.menu .dish li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .dish li span {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+.menu .dish li:nth-child(1) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.menu .dish li:nth-child(2) {
+  width: 70px;
+  text-align: center;
+}
+.menu .dish li:nth-child(3) {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 0px;
+  height: 100%;
+  color: white;
+  background-color: #99E2D0;
+  transition: all 0.4s;
+}
+.menu .dish li:nth-child(3) i {
+  font-size: 1.5em;
+}
+.menu .dish:hover > li:nth-child(3) {
+  max-width: 60px;
+}
+.menu .dish:hover > li:nth-child(3) i {
+  animation: spin 0.4s;
+}
+.menu .menu-button {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+main.menu article {
+  opacity: 0;
+  animation: fade-in ease-in-out forwards;
+  animation-duration: 1s;
+}
+main.menu article .dish {
+  animation-duration: 3s;
+}
+main.menu article.entrees {
+  animation-delay: 0s;
+}
+main.menu article.main-dish {
+  animation-delay: 0.5s;
+}
+main.menu article.desserts {
+  animation-delay: 1s;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    margin-left: 10%;
+    width: 60%;
+  }
+}
 footer {
   position: relative;
   padding: 5%;
@@ -282,12 +440,4 @@ footer i {
 }
 footer a :hover {
   color: #99E2D0;
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    width: 70%;
-    position: relative;
-    left: 10%;
-  }
 }/*# sourceMappingURL=style.css.map */

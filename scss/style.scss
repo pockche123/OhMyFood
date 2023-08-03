@@ -6,10 +6,18 @@
 
 @import './base/general';
 
+@import './base/animation';
+
 @import './layouts/header';
 
 @import './page/home';
 
+// @import './page/full-palette';
+
 @import './components/buttons';
+
+@import './components/menu-bg';
+
+@import './page/menu';
 
 @import './layouts/footer';

@@ -1,8 +1,10 @@
 button {
+  display: inline-block;
   height: 50px;
+ 
   border-radius: 25px;
   box-shadow: 0 5px 10px lightgray;
-  padding: 0 10%;
+  padding: 0 4em;
   border: none;
   font-weight: weight(bold);
   color: white;

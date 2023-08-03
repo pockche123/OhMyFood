@@ -17,3 +17,8 @@ $font-weights: (
      "light": 300
 );
 
+@mixin textNoWrap {
+    white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}

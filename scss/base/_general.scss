@@ -14,6 +14,7 @@ main {
   padding-top: 62px;
   box-sizing: border-box;
   width: 100%;
+
 }
 
 a{
@@ -21,9 +22,18 @@ a{
     color: black;
 }
 
-#light-label {
+.light-label {
   font-weight: weight(light);
 }
+
+
+li{
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;  
+}
+
+
 
 @media screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
 }
@@ -31,16 +41,15 @@ a{
 @media screen and (min-width: $mobile-breakpoint) {
   main {
     position: relative;
-
     width: 80%;
     top: 0;
     left: 10%;
 
-    .home {
-      box-sizing: border-box;
-      display: flex;
-      flex-wrap: wrap;
-    }
+    // .home {
+    //   box-sizing: border-box;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
   }
 
   section {
