@@ -93,7 +93,6 @@
         min-height: 200px;
         width: 95%;
         margin-bottom: 4%;
-        // padding: 2%;
         margin-left: 2%;
 
         img {
@@ -136,7 +135,7 @@
                     i {
                         width: 100%;
                         font-size: 1.8em;
-                        background: linear-gradient(rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+                        background: linear-gradient($primary-color 0%, $secondary-color 100%);
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
