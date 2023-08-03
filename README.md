@@ -8,7 +8,6 @@ Welcome to the Oh My Food website! This project showcases a platform for discove
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Description
@@ -17,7 +16,8 @@ The Oh My Food website allows users to explore and book menus at various restaur
 
 ## Screenshots
 
-Include some screenshots of your website here to give readers a visual idea of what the website looks like.
+![HomePage](https://github.com/pockche123/ohmyfood/blob/main/assets/images/screenshots/restaurants.jpg) 
+![Menu](https://github.com/pockche123/ohmyfood/blob/main/assets/images/screenshots/theFullPalette.jpg)
 
 ## Installation
 
@@ -33,9 +33,6 @@ Currently, the website is hosted online, and no installation is required for use
 
 Contributions are welcome! If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
