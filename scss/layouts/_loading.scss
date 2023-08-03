@@ -1,0 +1,41 @@
+
+.loading{
+    z-index: 1000;
+    position: fixed; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    top:0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+    background-color: rgba(0,0,0,0.6);
+    color: $secondary-color;
+    animation: loading 0.5s ease-in-out forwards; 
+    animation-delay: 1.5s;
+
+    i{
+        font-size: 3em; 
+        margin-bottom: 1em;
+        animation: beating 0.4s ease-in-out forwards infinite;
+
+    }
+
+    h3{
+        
+        span{
+            opacity: 0; 
+            animation: dots 0.5s ease-in-out forwards;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    -webkit-animation-delay: #{$i*0.5}s;
+                    animation-delay: #{$i*0.5}s;                    
+                }
+
+            }
+          
+        }
+    }
+
+}

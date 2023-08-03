@@ -1,124 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Oh My Food</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="ohmyfood logo" />
-        </a>
+      <a href="index.html">
+        <img src="/assets/logo/ohmyfood.png" alt="ohmyfood logo" />
+      </a>
     </header>
+   <section class="loading"><i class="fas fa-utensils"></i><h3>Loading &nbsp;<span>.</span>&nbsp;<span>.</span>&nbsp;<span>.</span></h3></section>
+
     <main class="home">
-        <section class="location">
-            <h3><i class="fas fa-map-marker-alt"></i>&nbsp; Paris, Belleville</h3>
+      <section class="location">
+        <h3><i class="fas fa-map-marker-alt"></i>&nbsp; Paris, Belleville</h3>
+      </section>
+      <div class="home-flex">
+        <section class="presentation">
+          <h2>Book the menu you like</h2>
+          <p>
+            <span class="light-label"
+              >Discover the top-of-the-art restaurants we picked for you</span
+            >
+          </p>
+          <button>Explore our restaurants</button>
         </section>
-        <div class="home-flex">
-            <section class="presentation">
-                <h2>Book the menu you like</h2>
-                <p>
-                    <span class="light-label">Discover the top-of-the-art restaurants we picked for you</span>
-                </p>
-                <button>Explore our restaurants</button>
-            </section>
-            <section class="usage">
-                <h2>How it works</h2>
-                <article>
-                    <h3><i class="fas fa-mobile-alt"></i>Choose a restaurant</h3>
-                    <p>1</p>
-                </article>
-                <article>
-                    <h3><i class="fas fa-list-ul"></i>Create your menu</h3>
-                    <p>2</p>
-                </article>
-                <article>
-                    <h3><i class="fas fa-store"></i>Go enjoy it at the restaurant</h3>
-                    <p>3</p>
-                </article>
-            </section>
+        <section class="usage">
+          <h2>How it works</h2>
+          <article>
+            <h3><i class="fas fa-mobile-alt"></i>Choose a restaurant</h3>
+            <p>1</p>
+          </article>
+          <article>
+            <h3><i class="fas fa-list-ul"></i>Create your menu</h3>
+            <p>2</p>
+          </article>
+          <article>
+            <h3><i class="fas fa-store"></i>Go enjoy it at the restaurant</h3>
+            <p>3</p>
+          </article>
+        </section>
+      </div>
+      <section class="restaurant">
+        <h2>Restaurants</h2>
+        <div class="card">
+          <a href="full-palette.html">
+            <img
+              src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="full-palette"
+            />
+            <article class="card-text">
+              <h3>The Full Palette</h3>
+              <span class="light-span">New York</span>
+              <p>
+                <span><i class="fas fa-heart"></i></span>
+                <span><i class="far fa-heart"></i></span>
+              </p>
+            </article>
+          </a>
         </div>
-        <section class="restaurant">
-            <h2>Restaurants</h2>
-            <div class="card">
-                <a href="full-palette.html">
-                    <img src="./assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="full-palette" />
-                    <article class="card-text">
-                        <h3>The Full Palette</h3>
-                        <span class="light-span">New York</span>
-                        <p>
-                            <span><i class="fas fa-heart"></i></span>
-                            <span><i class="far fa-heart"></i></span>
-                        </p>
-                    </article>
-
-                </a>
-
-            </div>
-            <div class="card">
-                <a href="enchanted.html">
-                    <img src="./assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="enchanted" />
-                    <article class="card-text">
-                        <h3>The Enchanted Plate</h3>
-                        <span class="light-span">New York</span>
-                        <p>
-                            <span><i class="fas fa-heart"></i></span>
-                            <span><i class="far fa-heart"></i></span>
-                        </p>
-                    </article>
-
-                </a>
-            </div>
-            <div class="card">
-                <a href="bastille.html">
-                    <img src="./assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="bastille" />
-                    <article class="card-text">
-                        <h3>Bastille</h3>
-                        <span class="light-span">New York</span>
-                        <p>
-                            <span><i class="fas fa-heart"></i></span>
-                            <span><i class="far fa-heart"></i></span>
-                        </p>
-                    </article>
-
-                </a>
-            </div>
-            <div class="card">
-                <a href="gourmand.html">
-                    <img src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="gourmand" />
-                    <article class="card-text">
-                        <h3>Le Gourmand</h3>
-                        <span class="light-span">New York</span>
-                        <p>
-                            <span><i class="fas fa-heart"></i></span>
-                            <span><i class="far fa-heart"></i></span>
-                        </p>
-                    </article>
-
-                </a>
-            </div>
-
-        </section>
-
+        <div class="card">
+          <a href="enchanted.html">
+            <img
+              src="./assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="enchanted"
+            />
+            <article class="card-text">
+              <h3>The Enchanted Plate</h3>
+              <span class="light-span">New York</span>
+              <p>
+                <span><i class="fas fa-heart"></i></span>
+                <span><i class="far fa-heart"></i></span>
+              </p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="bastille.html">
+            <img
+              src="./assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="bastille"
+            />
+            <article class="card-text">
+              <h3>Bastille</h3>
+              <span class="light-span">New York</span>
+              <p>
+                <span><i class="fas fa-heart"></i></span>
+                <span><i class="far fa-heart"></i></span>
+              </p>
+            </article>
+          </a>
+        </div>
+        <div class="card">
+          <a href="gourmand.html">
+            <img
+              src="./assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="gourmand"
+            />
+            <article class="card-text">
+              <h3>Le Gourmand</h3>
+              <span class="light-span">New York</span>
+              <p>
+                <span><i class="fas fa-heart"></i></span>
+                <span><i class="far fa-heart"></i></span>
+              </p>
+            </article>
+          </a>
+        </div>
+      </section>
     </main>
-
-     <footer class="home-footer">
-            <p>ohmyfood</p>
-            <a href="#"><p><i class="fas fa-utensils"></i>Suggest a restaurant</p></a>
-            <a href="#"><p><i class="fas fa-hands-helping"></i>Become a partner</p></a>
-            <a href="#"><p>Legal</p></a>
-            <a href="bayingray@hotmail.com"><p>Contact</p></a>
-        </footer>
-</body>
-
+    <footer class="home-footer">
+      <p>ohmyfood</p>
+      <a href="#"
+        ><p><i class="fas fa-utensils"></i>Suggest a restaurant</p></a
+      >
+      <a href="#"
+        ><p><i class="fas fa-hands-helping"></i>Become a partner</p></a
+      >
+      <a href="#"><p>Legal</p></a>
+      <a href="bayingray@hotmail.com"><p>Contact</p></a>
+    </footer>
+  </body>
 </html>
