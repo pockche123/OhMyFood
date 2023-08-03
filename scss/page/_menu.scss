@@ -144,6 +144,7 @@ main.menu {
         animation-duration: 1s;	   
 
         .dish{
+          @include fading;
          -webkit-animation-duration: 3s;
         animation-duration: 3s;	   
 
