@@ -53,14 +53,14 @@ li {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(0px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(10px);
   }
 }
 @keyframes loading {
@@ -151,7 +151,7 @@ header:hover {
   animation: beating 1s ease-in-out forwards infinite;
 }
 .loading h3 span {
-  opacity: 0;
+  opacity: 1;
   animation: dots 0.7s ease-in-out forwards infinite;
 }
 .loading h3 span:nth-child(1) {

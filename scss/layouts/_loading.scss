@@ -11,7 +11,7 @@
     bottom: 0; 
     right: 0; 
     background-color: rgba(0,0,0,0.6);
-    color: $secondary-color;
+     color: $secondary-color;
     animation: loading 0.5s ease-in-out forwards; 
     animation-delay: 1.5s;
 
@@ -19,13 +19,14 @@
         font-size: 3em; 
         margin-bottom: 1em;
         animation: beating 1s ease-in-out forwards infinite;
+        
 
     }
 
     h3{
         
         span{
-            opacity: 0; 
+            opacity: 1; 
             animation: dots 0.7s ease-in-out forwards infinite;
             @for $i from 1 through 3 {
                 &:nth-child(#{$i}) {

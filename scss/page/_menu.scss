@@ -122,7 +122,7 @@
 
 
 @mixin fading {
-    opacity: 0;
+     opacity: 0;
   
     -webkit-animation: fade-in ease-in-out forwards;
     // -webkit-animation-timing-function: ease;
@@ -132,7 +132,8 @@
     // animation-fill-mode: forwards;
 }
 
-$var: entrees, main-dish, desserts; $i: 0;
+$var: entrees, main-dish, desserts;
+$i: 0;
 
 main.menu {
 
