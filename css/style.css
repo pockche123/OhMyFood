@@ -344,6 +344,10 @@ header:hover {
     transform: scale(1.02);
   }
 }
+.full-palette::before {
+  background-image: url("../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
 button {
   display: inline-block;
   height: 50px;
@@ -360,10 +364,6 @@ button {
 button:hover {
   box-shadow: 0 4px 5px lightgray;
   filter: brightness(1.1);
-}
-
-.full-palette::before {
-  background-image: url("./../../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .enchanted::before {
