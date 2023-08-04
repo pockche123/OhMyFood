@@ -14,6 +14,8 @@ Welcome to the Oh My Food website! This project showcases a platform for discove
 
 The Oh My Food website allows users to explore and book menus at various restaurants. It provides a user-friendly interface to choose from a selection of curated restaurants, look at the menus, and enjoy a delightful dining experience.
 
+Visit the website: [https://pockche123.github.io/ohmyfood](https://pockche123.github.io/ohmyfood)
+
 ## Screenshots
 
 ![HomePage](https://github.com/pockche123/ohmyfood/blob/main/assets/screenshots/restaurants.jpg) 
