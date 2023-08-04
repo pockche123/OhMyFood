@@ -344,10 +344,6 @@ header:hover {
     transform: scale(1.02);
   }
 }
-.full-palette::before {
-  background-image: url("../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-
 button {
   display: inline-block;
   height: 50px;
@@ -366,16 +362,20 @@ button:hover {
   filter: brightness(1.1);
 }
 
+.full-palette::before {
+  background-image: url("../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
 .enchanted::before {
-  background-image: url("../../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .bastille::before {
-  background-image: url("../../assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .gourmand::before {
-  background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .menu {
