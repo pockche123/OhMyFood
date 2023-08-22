@@ -248,6 +248,7 @@ header:hover {
   width: 95%;
   margin-bottom: 4%;
   margin-left: 2%;
+  position: relative;
 }
 .restaurant .card img {
   -o-object-fit: cover;
@@ -258,6 +259,14 @@ header:hover {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   padding: 0;
+}
+.restaurant .card .new-tag {
+  position: absolute;
+  background-color: #99E2D0;
+  padding: 5px 25px;
+  right: 4px;
+  top: 0;
+  border-radius: 3px;
 }
 .restaurant .card .card-text {
   padding-bottom: 15px;
